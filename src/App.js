@@ -1,9 +1,10 @@
 import React from 'react';
-import './sobre.css';
+import './styles/generic/reset.css';
+import './App.css';
 
 function App() {
   return (
-    <h1 className="sobre">sobre</h1>
+    <a href="#" className="action">Sobre</a>
   );
 }
 
