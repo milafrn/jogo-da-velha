@@ -1,5 +1,6 @@
 .action {
-  font: bold 14px 'Montserrat', sans-serif;
+  font-weight: bold; 
+  font-size: 14px;
   color: var(--color-negative);
   text-transform: uppercase;
   text-decoration: none;

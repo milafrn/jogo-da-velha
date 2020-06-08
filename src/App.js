@@ -1,12 +1,9 @@
 import React from 'react';
-import './styles/settings/colors.css';
-import './styles/generic/reset.css';
-import './styles/elements/elements.css';
 import './App.css';
 
 function App() {
   return (
-    <a href="#" className="action">Sobre</a>
+    <a href="#to-do" className="action">Sobre</a>
   );
 }
 
