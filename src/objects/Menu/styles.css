@@ -1,0 +1,16 @@
+.menu {
+  padding: 0;
+  border: none;
+}
+
+.menu > div,
+.menu:after,
+.menu:before {
+  display: block;
+  width: 25px;
+  height: 4px;
+  border-radius: 3px;
+  content: '';
+  margin: 4px 0;
+  background-color: var(--color-four);
+}
