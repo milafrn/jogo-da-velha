@@ -1,9 +1,13 @@
-import React from 'react';
-import Sobre from './objects/Sobre';
+import React from "react";
+import Sobre from "./objects/Sobre";
+import Logo from "./objects/Logo";
 
 function App() {
   return (
-    <Sobre />
+    <div>
+      <Logo />
+      <Sobre />
+    </div>
   );
 }
 
