@@ -1,15 +1,16 @@
 import React from "react";
+import Header from './components/header';
 import Logo from "./objects/Logo";
 import Sobre from "./objects/Sobre";
 import Menu from "./objects/Menu";
 
 function App() {
   return (
-    <div>
+    <Header>
       <Logo />
       <Sobre />
       <Menu />
-    </div>
+    </Header>
   );
 }
 
