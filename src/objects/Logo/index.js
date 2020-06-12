@@ -1,13 +1,6 @@
 import React from "react";
-import Logoimg from '../../assets/logo.png';
-import './styles.css';
+import CollabCode from '../../img/logo.png';
 
-const Logo = () => {
-  return (
-    <a className="logo" href="#to-do">
-      <img src={Logoimg} ></img>
-    </a>
-  );
-};
+const Logo = () => (<img src={CollabCode} alt="Logo da CollabCode" />);
 
 export default Logo

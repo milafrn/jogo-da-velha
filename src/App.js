@@ -1,16 +1,13 @@
 import React from "react";
-import Header from './components/header';
-import Logo from "./objects/Logo";
 import Sobre from "./objects/Sobre";
-import Menu from "./objects/Menu";
+import Logo from "./objects/Logo";
 
 function App() {
   return (
-    <Header>
+    <>
       <Logo />
       <Sobre />
-      <Menu />
-    </Header>
+    </>
   );
 }
 
