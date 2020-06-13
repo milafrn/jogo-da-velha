@@ -1,16 +1,17 @@
 .menu {
-  padding: 0;
-  border: none;
+  display: block;
+  text-indent: -9999px;
 }
 
-.menu > div,
-.menu:after,
-.menu:before {
+.menu::after, .menu::before, .menu > .center {
+  content: "";
   display: block;
-  width: 25px;
+  background-color: var(--color-fourth);
   height: 4px;
-  border-radius: 3px;
-  content: '';
-  margin: 4px 0;
-  background-color: var(--color-four);
+  width: 100%;
+  border-radius: 2px;
+}
+
+.menu::before, .menu > .center {
+  margin-bottom: 5px;
 }
