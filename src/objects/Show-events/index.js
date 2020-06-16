@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 
 const ShowEvents = () => (
-  <label class="show-events" id="" >Mostrar eventos</label>
+  <label className="show-events" htmlFor="checkbox" >Mostrar eventos</label>
 )
 
 export default ShowEvents

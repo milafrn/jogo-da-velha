@@ -9,10 +9,11 @@
 }
 
 .app > .card {
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
   width: 90vw;
   height: 90vw;
+  margin: 0 auto;
 }
 
 .app > .show-events {
