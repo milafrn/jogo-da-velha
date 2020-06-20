@@ -12,3 +12,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.input:checked + .label::before {
+  background-color: var(--color-first);
+}
