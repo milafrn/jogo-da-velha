@@ -4,4 +4,47 @@
   width: 100%;
   height: 100vh;
   background-color: var(--color-negative);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.layer > .header > .sobre {
+  color: var(--color-zero);
+}
+
+.layer > .header > .menu > .center {
+  opacity: 0;
+}
+
+.layer > .header > .menu::after,
+.layer > .header > .menu::before {
+  content: "";
+  display: block;
+  background-color: var(--color-zero);
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.layer > .header > .menu::after {
+  transform: rotate(45deg) translateY(-12px);
+}
+
+.layer > .header > .menu::before {
+  transform: rotate(-45deg) translateY(12px);
+}
+
+.layer > .title {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.layer > .text {
+  width: 65%;
+  margin-bottom: 35px;
+}
+
+.layer > .social > .icon:not(:last-child) {
+  margin-right: 15px;
 }

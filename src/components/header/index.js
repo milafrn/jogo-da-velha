@@ -4,9 +4,9 @@ import Logo from "../../objects/Logo";
 import Sobre from "../../objects/Sobre";
 import Menu from "../../objects/Menu";
 
-const Header = () => (
+const Header = ({ logoImg }) => (
   <header className="header">
-    <Logo />
+    <Logo img={logoImg} />
     <Sobre />
     <Menu />
   </header>
