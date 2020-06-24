@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.css";
 
-const Menu = () => (
-  <a href="#menu" className="menu">
+const Menu = ({ setShowLayer }) => (
+  <a href="#menu" className="menu" onClick={setShowLayer}>
     <span className="center">Menu</span>
   </a>
 );

@@ -1,16 +1,15 @@
-import React from 'react';
-import './styles.css';
-import Header from '../Header';
+import React from "react";
+import "./styles.css";
+import Header from "../Header";
 import CollabCodeWhite from "../../img/logo-white.png";
-import Avatar from '../../objects/Avatar';
-import Title from '../../objects/Title';
-import Text from '../../objects/Text';
-import Social from '../../objects/Social';
+import Avatar from "../../objects/Avatar";
+import Title from "../../objects/Title";
+import Text from "../../objects/Text";
+import Social from "../../objects/Social";
 
-
-const Layer = () => (
+const Layer = ({ setShowLayer }) => (
   <section className="layer">
-    <Header logoImg={CollabCodeWhite} />
+    <Header logoImg={CollabCodeWhite} setShowLayer={setShowLayer} />
     <Avatar />
     <Title content="Marco Bruno" />
     <Text content="Migrei de palhaço para Dev. Front-End/UX e agora eu trabalho na comunidade da Impulso" />

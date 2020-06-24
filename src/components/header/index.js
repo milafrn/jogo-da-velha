@@ -4,11 +4,11 @@ import Logo from "../../objects/Logo";
 import Sobre from "../../objects/Sobre";
 import Menu from "../../objects/Menu";
 
-const Header = ({ logoImg }) => (
+const Header = ({ logoImg, setShowLayer }) => (
   <header className="header">
     <Logo img={logoImg} />
     <Sobre />
-    <Menu />
+    <Menu setShowLayer={setShowLayer}/>
   </header>
 );
 
