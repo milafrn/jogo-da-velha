@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 import "./styles.css";
 import Logo from "../../objects/Logo";
 import Sobre from "../../objects/Sobre";
 import Menu from "../../objects/Menu";
 
-const Header = ({ logoImg, setShowLayer }) => (
+const Header = () => (
   <header className="header">
-    <Logo img={logoImg} />
+    <Logo />
     <Sobre />
-    <Menu setShowLayer={setShowLayer}/>
+    <Menu />
   </header>
 );
 

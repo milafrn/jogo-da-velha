@@ -1,24 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 
 import Checkbox from "./objects/Checkbox";
-import Layer from "./components/Layer";
+import About from "./objects/About";
 import Header from "./components/Header";
 import Hashtag from "./components/Hashtag";
-import CollabCode from "./img/logo.png";
 
 const App = () => {
-  const [showLayer, setShowLayer] = useState(false);
-  function openLayer () {
-    setShowLayer(true)
-  }
-  function closeLayer () {
-    setShowLayer(false);
-  }
   return (
     <main className="app">
-      {showLayer && <Layer setShowLayer={closeLayer}/>}
-      <Header logoImg={CollabCode} setShowLayer={openLayer}/>
+      <Header />
       <Hashtag />
       <Checkbox
         id="show"
@@ -26,6 +17,7 @@ const App = () => {
         type="checkbox"
         content="Mostrar eventos"
       />
+      <About />
     </main>
   );
 };
