@@ -7,6 +7,7 @@ import AboutLink from "./objects/AboutLink";
 import IconClose from "./objects/IconClose";
 import Header from "./components/Header";
 import Hashtag from "./components/Hashtag";
+import LogoCollab from "./objects/LogoCollab";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         content="Mostrar eventos"
       />
       <About>
+        <LogoCollab/>
         <AboutLink className="-light"/>
         <IconClose />
       </About>
