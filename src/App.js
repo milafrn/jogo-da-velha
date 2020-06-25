@@ -21,7 +21,7 @@ const App = () => {
         content="Mostrar eventos"
       />
       <About>
-        <LogoCollab/>
+        <LogoCollab light />
         <AboutLink className="-light"/>
         <IconClose />
       </About>
