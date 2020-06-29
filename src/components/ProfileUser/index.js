@@ -19,11 +19,11 @@ const ProfileUser = () => (
     <dt className="title">Camila Fernandes</dt>
     <dd className="description">Sou estudante de Front-End. No momento não trabalho na área de programação, mas um dia ainda irei conseguir entrar no mercado de programação.</dd>
     <dd className="socials">
-      <IconSocial src={GitHub} alt="Logo da GitHub" />
-      <IconSocial src={Linkedin} alt="Logo da Linkedin" />
-      <IconSocial src={Facebook} alt="Logo da Facebook" />
-      <IconSocial src={Twitter} alt="Logo da Twitter" />
-      <IconSocial src={Instagram} alt="Logo da Instagram" />
+      <IconSocial action="https://github.com/milafrn" src={GitHub} alt="Logo da GitHub" />
+      <IconSocial action="#" src={Linkedin} alt="Logo da Linkedin" />
+      <IconSocial action="https://www.facebook.com/kaah.fernandes.79/" src={Facebook} alt="Logo da Facebook" />
+      <IconSocial action="#" src={Twitter} alt="Logo da Twitter" />
+      <IconSocial action="#" src={Instagram} alt="Logo da Instagram" />
     </dd>
   </dl>
 );

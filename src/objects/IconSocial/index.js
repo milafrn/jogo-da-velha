@@ -1,7 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const IconSocial = ({src, alt}) => (
-  <img className="icon-social" src={src} alt={alt} />
+const IconSocial = ({ action, src, alt }) => (
+  <a target="_blank" href={action}>
+    <img className="icon-social" src={src} alt={alt} />
+  </a>
 );
 
 export default IconSocial;
