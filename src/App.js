@@ -10,11 +10,13 @@ import Checkbox from "./objects/Checkbox";
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("");
 
-  const handleClick = () => setActiveAbout("-active");
+  const handleClickAdd = () => setActiveAbout("-active");
+
+  const handleClickRemove = () => setActiveAbout('');
 
   return (
     <main className="app">
-      <Header onClick={handleClick} />
+      <Header onClick={handleClickAdd} />
       <Hashtag />
       <Checkbox
         id="show"
@@ -23,7 +25,7 @@ const App = () => {
         content="Mostrar eventos"
       />
       <About className={activeAbout}>
-        <HeaderInternal />
+        <HeaderInternal onClick={handleClickRemove}/>
         <ProfileUser />
       </About>
     </main>
