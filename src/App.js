@@ -7,12 +7,17 @@ import ProfileUser from "./components/ProfileUser";
 import About from "./objects/About";
 import Checkbox from "./objects/Checkbox";
 
+let activeAbout = '';
 
+const handleClick = () => {
+  console.log('clicou');
+  activeAbout = '-active';
+};
 
 const App = () => {
   return (
     <main className="app">
-      <Header />
+      <Header onClick={handleClick}/>
       <Hashtag />
       <Checkbox
         id="show"
@@ -20,7 +25,7 @@ const App = () => {
         type="checkbox"
         content="Mostrar eventos"
       />
-      <About className="-active">
+      <About className={activeAbout}>
         <HeaderInternal />
         <ProfileUser />
       </About>
