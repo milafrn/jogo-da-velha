@@ -20,7 +20,7 @@ const App = () => {
         type="checkbox"
         content="Mostrar eventos"
       />
-      <About>
+      <About className="-active">
         <HeaderInternal />
         <ProfileUser />
       </About>
