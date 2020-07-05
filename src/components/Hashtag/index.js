@@ -1,10 +1,10 @@
 import React from "react";
-import './styles.css';
-import Card from "../../objects/Card";
+import CardCollab from "../../objects/CardCollab";
 import Player from "../../objects/Player";
+import './styles.css';
 
 const Hashtag = () => (
-  <Card>
+  <CardCollab>
     <ul className="hashtag">
       <li className="item"><Player player="o" /></li>
       <li className="item"><Player player="x" /></li>
@@ -18,7 +18,7 @@ const Hashtag = () => (
       <li className="item"><Player player="o" /></li>
       <li className="item"><Player player="x" /></li>
     </ul>
-  </Card>
+  </CardCollab>
 );
 
 export default Hashtag;

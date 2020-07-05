@@ -1,9 +1,9 @@
-.menu {
+.menu-collab {
   display: block;
   text-indent: -9999px;
 }
 
-.menu::after, .menu::before, .menu > .center {
+.menu-collab::after, .menu-collab::before, .menu-collab > .center {
   content: "";
   display: block;
   background-color: var(--color-fourth);
@@ -12,6 +12,6 @@
   border-radius: 2px;
 }
 
-.menu::before, .menu > .center {
+.menu-collab::before, .menu-collab > .center {
   margin-bottom: 5px;
 }

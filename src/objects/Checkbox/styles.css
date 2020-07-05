@@ -2,12 +2,12 @@
   display: none;
 }
 
-.label {
+.label-collab {
   display: inline-flex;
   align-items: center;
 }
 
-.label::before {
+.label-collab::before {
   content: "";
   box-sizing: border-box;
   display: inline-block;
@@ -19,6 +19,6 @@
   margin-right: 5px;
 }
 
-.input-collab:checked + .label::before {
+.input-collab:checked + .label-collab::before {
   background-color: var(--color-first);
 }
