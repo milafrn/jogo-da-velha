@@ -4,7 +4,7 @@ import Hashtag from "./components/Hashtag";
 import Header from "./components/Header";
 import HeaderInternal from "./components/HeaderInternal";
 import ProfileUser from "./components/ProfileUser";
-import About from "./objects/About";
+import AboutProfile from "./objects/AboutProfile";
 import Checkbox from "./objects/Checkbox";
 
 const App = () => {
@@ -24,10 +24,10 @@ const App = () => {
         type="checkbox"
         content="Mostrar eventos"
       />
-      <About className={activeAbout}>
+      <AboutProfile className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove}/>
         <ProfileUser />
-      </About>
+      </AboutProfile>
     </main>
   );
 };
