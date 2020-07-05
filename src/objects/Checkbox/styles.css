@@ -1,4 +1,4 @@
-.input {
+.input-collab {
   display: none;
 }
 
@@ -19,6 +19,6 @@
   margin-right: 5px;
 }
 
-.input:checked + .label::before {
+.input-collab:checked + .label::before {
   background-color: var(--color-first);
 }
