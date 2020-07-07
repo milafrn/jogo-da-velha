@@ -1,0 +1,10 @@
+.play-history {
+  font-size: var(--size-small);
+  color: var(--color-negative);
+  background-color: var(--color-zero);
+  text-align: center;
+  padding: 5px 20px;
+  width: 130px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}

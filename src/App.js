@@ -3,6 +3,7 @@ import "./App.css";
 import Hashtag from "./components/Hashtag";
 import Header from "./components/Header";
 import HeaderInternal from "./components/HeaderInternal";
+import HistoryPlays from "./components/HistoryPlays";
 import ProfileUser from "./components/ProfileUser";
 import AboutProfile from "./objects/AboutProfile";
 import Checkbox from "./objects/Checkbox";
@@ -24,6 +25,7 @@ const App = () => {
         type="checkbox"
         content="Mostrar eventos"
       />
+      <HistoryPlays />
       <AboutProfile className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove}/>
         <ProfileUser />
