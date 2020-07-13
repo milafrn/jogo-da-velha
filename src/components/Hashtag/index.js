@@ -1,22 +1,22 @@
 import React from "react";
 import CardGame from "../../objects/CardGame";
-import PlayerCollab from "../../objects/PlayerCollab";
+import PlayerGame from "../../objects/PlayerGame";
 import './styles.css';
 
 const Hashtag = () => (
   <CardGame>
     <ul className="hashtag">
-      <li className="item"><PlayerCollab player="o" /></li>
-      <li className="item"><PlayerCollab player="x" /></li>
-      <li className="item"><PlayerCollab player="x" /></li>
+      <li className="item"><PlayerGame player="o" /></li>
+      <li className="item"><PlayerGame player="x" /></li>
+      <li className="item"><PlayerGame player="x" /></li>
 
-      <li className="item"><PlayerCollab player="o" /></li>
-      <li className="item"><PlayerCollab player="x" /></li>
-      <li className="item"><PlayerCollab player="o" /></li>
+      <li className="item"><PlayerGame player="o" /></li>
+      <li className="item"><PlayerGame player="x" /></li>
+      <li className="item"><PlayerGame player="o" /></li>
 
-      <li className="item"><PlayerCollab player="x" /></li>
-      <li className="item"><PlayerCollab player="o" /></li>
-      <li className="item"><PlayerCollab player="x" /></li>
+      <li className="item"><PlayerGame player="x" /></li>
+      <li className="item"><PlayerGame player="o" /></li>
+      <li className="item"><PlayerGame player="x" /></li>
     </ul>
   </CardGame>
 );
