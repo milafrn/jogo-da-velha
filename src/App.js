@@ -5,8 +5,8 @@ import Header from "./components/Header";
 import HeaderInternal from "./components/HeaderInternal";
 import HistoryPlays from "./components/HistoryPlays";
 import ProfileUser from "./components/ProfileUser";
-import AboutProfile from "./objects/AboutProfile";
 import Checkbox from "./objects/Checkbox";
+import LayerDark from "./objects/LayerDark";
 
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("");
@@ -26,10 +26,10 @@ const App = () => {
         content="Mostrar eventos"
       />
       <HistoryPlays />
-      <AboutProfile className={activeAbout}>
+      <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove}/>
         <ProfileUser />
-      </AboutProfile>
+      </LayerDark>
     </main>
   );
 };
