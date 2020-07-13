@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import HeaderInternal from "./components/HeaderInternal";
 import HistoryPlays from "./components/HistoryPlays";
 import ProfileUser from "./components/ProfileUser";
-import Checkbox from "./objects/Checkbox";
+import InputCheckbox from "./objects/InputCheckbox";
 import LayerDark from "./objects/LayerDark";
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
     <main className="app">
       <Header onClick={handleClickAdd} />
       <Hashtag />
-      <Checkbox
+      <InputCheckbox
         id="show"
         value="show"
         type="checkbox"
