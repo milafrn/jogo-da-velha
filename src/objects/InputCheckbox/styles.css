@@ -1,4 +1,4 @@
-.input-collab {
+.input-game {
   display: none;
 }
 
@@ -19,6 +19,6 @@
   margin-right: 5px;
 }
 
-.input-collab:checked + .label-collab::before {
+.input-game:checked + .label-collab::before {
   background-color: var(--color-first);
 }

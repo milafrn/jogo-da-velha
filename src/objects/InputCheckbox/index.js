@@ -1,12 +1,12 @@
 import React from 'react';
-import InputCollab from '../InputCollab';
+import InputGame from '../InputGame';
 import LabelCollab from '../LabelCollab';
 import './styles.css';
 
 
 const InputCheckbox = ({id = "", value = "", content = ""}) => (
   <>
-    <InputCollab id={id} value={value} type="checkbox" content={content} />
+    <InputGame id={id} value={value} type="checkbox" content={content} />
     <LabelCollab htmlFor={id} content={content} />
   </>
 )
