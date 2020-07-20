@@ -16,8 +16,7 @@ const App = () => {
   const handleClickRemove = () => setActiveAbout('');
 
   const handleClick = () => {
-    console.log('alo')
-    setHistoryGame('-active');
+    setHistoryGame((old) => old === '-active' ? '' : '-active');
   }
 
   return (
