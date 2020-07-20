@@ -3,10 +3,10 @@ import "./App.css";
 import HashtagGame from "./components/HashtagGame";
 import HeaderGame from "./components/HeaderGame";
 import HeaderInternal from "./components/HeaderInternal";
+import HistoryGame from "./components/HistoryGame";
 import ProfileUser from "./components/ProfileUser";
 import InputCheckbox from "./objects/InputCheckbox";
 import LayerDark from "./objects/LayerDark";
-import TagGame from "./objects/TagGame";
 
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("");
@@ -26,8 +26,7 @@ const App = () => {
         content="Mostrar eventos"
       />
 
-      <TagGame content="Adicionou O" />
-
+      <HistoryGame />
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove}/>
         <ProfileUser />
