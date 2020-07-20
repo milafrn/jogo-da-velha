@@ -6,17 +6,17 @@ import './styles.css';
 const HashtagGame = () => (
   <CardGame>
     <ul className="hashtag-game">
-      <li className="item"><PlayerGame player="o" /></li>
-      <li className="item"><PlayerGame player="x" /></li>
-      <li className="item"><PlayerGame player="x" /></li>
+      <li className="item"><PlayerGame /></li>
+      <li className="item"><PlayerGame /></li>
+      <li className="item"><PlayerGame /></li>
 
-      <li className="item"><PlayerGame player="o" /></li>
-      <li className="item"><PlayerGame player="x" /></li>
-      <li className="item"><PlayerGame player="o" /></li>
+      <li className="item"><PlayerGame /></li>
+      <li className="item"><PlayerGame /></li>
+      <li className="item"><PlayerGame /></li>
 
-      <li className="item"><PlayerGame player="x" /></li>
-      <li className="item"><PlayerGame player="o" /></li>
-      <li className="item"><PlayerGame player="x" /></li>
+      <li className="item"><PlayerGame /></li>
+      <li className="item"><PlayerGame /></li>
+      <li className="item"><PlayerGame /></li>
     </ul>
   </CardGame>
 );
