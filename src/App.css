@@ -16,9 +16,12 @@
   width: 90vw;
   height: 90vw;
   margin-bottom: 40px;
+  max-width: 330px;
+  max-height: 330px;
 }
 
 .app > .label-game {
+  display: block;
   margin-bottom: var(--spacing-big);
 }
 
@@ -28,4 +31,22 @@
 
 .app > .input-game:checked ~ .history-game {
   display: block;
+}
+
+@media (min-width: 992px){
+  .app > .header-game {
+    background-color: var(--color-tenth);
+    margin: 0;
+    padding: 20px 85px;
+    margin-bottom: 15%;
+  }
+  .app > .card-game .item:hover {
+    background-color: var(--color-eleventh);
+  }
+
+  .app > .history-game {
+    position: absolute;
+    right: 25%;
+    top: 28%;
+  }
 }
