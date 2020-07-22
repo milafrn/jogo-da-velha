@@ -10,15 +10,21 @@ import LayerDark from "./objects/LayerDark";
 
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("");
+  const [actionHistory, setActionHistory] = useState([]);
+  const [current, setCurrent] = useState('x');
 
   const handleClickAdd = () => setActiveAbout("-active");
   const handleClickRemove = () => setActiveAbout('');
 
+  const onClick = (action) => {
+    setActionHistory([...actionHistory, action]);
+    setCurrent(action);
+  }
 
   return (
     <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
-      <HashtagGame />
+      <HashtagGame onClick={onClick} current={current}/>
       <InputCheckbox
         id="show"
         value="show"
@@ -26,7 +32,7 @@ const App = () => {
         content="Mostrar eventos"
       />
 
-      <HistoryGame />
+      <HistoryGame history={actionHistory}/>
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove}/>
         <ProfileUser />
