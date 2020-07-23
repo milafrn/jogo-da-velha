@@ -10,15 +10,21 @@ import LayerDark from "./objects/LayerDark";
 
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("");
-  const history = ['Adicionou X', 'Adicionou O', 'Adicionou X'];
+  const history = [];
 
   const handleClickAdd = () => setActiveAbout("-active");
   const handleClickRemove = () => setActiveAbout('');
 
+  const addHistory = (player) => {
+    console.log('antes do push', history)
+    history.push(`Adicionou ${player.toUpperCase()}`);
+    console.log('depois do push', history)
+  }
+
   return (
     <main id="main" className="app">
       <HeaderGame onClick={handleClickAdd} />
-      <HashtagGame />
+      <HashtagGame callback={addHistory} />
       <InputCheckbox
         id="show"
         value="show"
