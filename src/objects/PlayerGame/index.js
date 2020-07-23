@@ -1,19 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import playerO from "../../img/player-o.png";
 import playerX from "../../img/player-x.png";
 import "./styles.css";
 
-const PlayerGame = ({player = false}) => {
-  const [statePlayer, setStatePlayer] = useState(player)
+const PlayerGame = ({content = ''}) => {
   const players = [];
+  players[''] = ''
   players["x"] = playerX;
   players["o"] = playerO;
 
-  const handleClick = () => setStatePlayer(player);
   
   return (
-    <button onClick={handleClick} className="player-game">
-      {statePlayer && <img src={players[statePlayer]} alt={`Jogador ${statePlayer.toUpperCase()}`} />}
+    <button className="player-game">
+      {players[content] && <img src={players[content]} alt={`Jogador ${content}`} />}
     </button>
   );
 };
