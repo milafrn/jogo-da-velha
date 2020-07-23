@@ -10,6 +10,7 @@ import LayerDark from "./objects/LayerDark";
 
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("");
+  const history = ['Adicionou X', 'Adicionou O', 'Adicionou X'];
 
   const handleClickAdd = () => setActiveAbout("-active");
   const handleClickRemove = () => setActiveAbout('');
@@ -25,7 +26,8 @@ const App = () => {
         content="Mostrar eventos"
       />
 
-      <HistoryGame />
+      <HistoryGame history={history}/>
+
       <LayerDark className={activeAbout}>
         <HeaderInternal onClick={handleClickRemove}/>
         <ProfileUser />

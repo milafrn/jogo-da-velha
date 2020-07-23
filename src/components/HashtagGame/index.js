@@ -18,7 +18,6 @@ const HashtagGame = () => {
   ]);
 
   const handleClick = (id) => {
-    console.log('clicou')
     setPlayers(old => old.map(player => player.id === id ? {id, content: nextPlayer} : player))
 
     setNextPlayer((old) => (old === "x" ? "o" : "x"));
