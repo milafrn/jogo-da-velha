@@ -2,13 +2,11 @@ import React from "react";
 import TagGame from "../../objects/TagGame";
 import "./styles.css";
 
-const HistoryGame = ({ history }) => (
+const HistoryGame = () => (
   <ol className="history-game">
-    {history.map((action) => (
       <li className="action">
-        <TagGame content={`Adicionou ${action.toUpperCase()}`} />
+        <TagGame content={`Adicionou `} />
       </li>
-    ))}
     <li className="action">
       <TagGame className="-end" content="Empate!" />
     </li>

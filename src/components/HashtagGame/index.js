@@ -1,24 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import CardGame from "../../objects/CardGame";
 import PlayerGame from "../../objects/PlayerGame";
 import './styles.css';
 
-const HashtagGame = ({onClick , current}) => (
-  <CardGame>
-    <ul className="hashtag-game">
-      <li className="item"><PlayerGame current={current} onClick={onClick}/></li>
-      <li className="item"><PlayerGame current={current} onClick={onClick}/></li>
-      <li className="item"><PlayerGame current={current} onClick={onClick}/></li>
+const HashtagGame = () => {
+  const [nextPlayer, setNextPlayer] = useState('x');
 
-      <li className="item"><PlayerGame current={current} onClick={onClick}/></li>
-      <li className="item"><PlayerGame current={current} onClick={onClick}/></li>
-      <li className="item"><PlayerGame current={current} onClick={onClick}/></li>
+  const handleClick = () => {
+    console.log('Proximo jogador', nextPlayer)
+    
+    setNextPlayer((old) => {
+      if(old === 'x') {
+        return 'o'
+      } else {
+        return 'x';
+      }
+    });
+  };
+  
+  return (
+    <CardGame>
+      <ul className="hashtag-game" onClick={handleClick}>
+        <li className="item"><PlayerGame /></li>
+        <li className="item"><PlayerGame /></li>
+        <li className="item"><PlayerGame /></li>
 
-      <li className="item"><PlayerGame current={current} onClick={onClick}/></li>
-      <li className="item"><PlayerGame current={current} onClick={onClick}/></li>
-      <li className="item"><PlayerGame current={current} onClick={onClick}/></li>
-    </ul>
-  </CardGame>
-);
+        <li className="item"><PlayerGame /></li>
+        <li className="item"><PlayerGame /></li>
+        <li className="item"><PlayerGame /></li>
+
+        <li className="item"><PlayerGame /></li>
+        <li className="item"><PlayerGame /></li>
+        <li className="item"><PlayerGame /></li>
+      </ul>
+    </CardGame>
+  )
+};
 
 export default HashtagGame;
