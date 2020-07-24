@@ -10,16 +10,12 @@ import LayerDark from "./objects/LayerDark";
 
 const App = () => {
   const [activeAbout, setActiveAbout] = useState("");
-  const history = [];
+  const [history, setHistory] = useState([]);
 
   const handleClickAdd = () => setActiveAbout("-active");
   const handleClickRemove = () => setActiveAbout('');
 
-  const addHistory = (player) => {
-    console.log('antes do push', history)
-    history.push(`Adicionou ${player.toUpperCase()}`);
-    console.log('depois do push', history)
-  }
+  const addHistory = (player) => setHistory(old => [...old, `Adicionou ${player}`])
 
   return (
     <main id="main" className="app">
