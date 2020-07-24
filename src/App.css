@@ -33,20 +33,13 @@
   display: block;
 }
 
-@media (min-width: 992px){
+@media (min-width: 740px) {
   .app > .header-game {
-    background-color: var(--color-tenth);
-    margin: 0;
-    padding: 20px 85px;
-    margin-bottom: 15%;
-  }
-  .app > .card-game .item:hover {
-    background-color: var(--color-eleventh);
-  }
-
-  .app > .history-game {
-    position: absolute;
-    right: 25%;
-    top: 28%;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
