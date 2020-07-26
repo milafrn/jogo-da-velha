@@ -30,11 +30,13 @@
 }
 
 .app .history-game {
-  display: none;
+  display: block;
+  opacity: 0;
+  transition: opacity 300ms linear;
 }
 
 .app .input-game:checked ~ .history-game {
-  display: block;
+  opacity: 100;
 }
 
 @media (min-width: 740px) {
