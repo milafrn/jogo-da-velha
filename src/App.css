@@ -30,13 +30,11 @@
 }
 
 .app .history-game {
-  display: block;
-  opacity: 0;
-  transition: opacity 300ms linear;
+  display: none;
 }
 
 .app .input-game:checked ~ .history-game {
-  opacity: 100;
+  display: block;
 }
 
 @media (min-width: 740px) {
@@ -49,19 +47,34 @@
     padding-right: 10%;
   
   }
-  .app .card-game {
-    margin-right: 40px;
-  }
 
   .app > .wrapper-hashtagHistory {
     display: inline-flex;
     justify-content: center;
     position: relative;
+    transition: transform 200ms linear;
   }
-  
+
+  .app > .wrapper-hashtagHistory.-active {
+    transform: translateX(-20%);
+  }
+
   .app .label-game {
     position: absolute;
     left: 96px;
     top: 370px;
+  }
+
+  .app .history-game {
+    display: block;
+    opacity: 0;
+    transition: transform 150ms linear;
+  }
+
+  .app > .wrapper-hashtagHistory.-active > .history-game {
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
+    transform: translateX(200%);
   }
 }
